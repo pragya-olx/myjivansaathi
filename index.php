@@ -181,22 +181,22 @@
             </div>
             <div class="col-md-4 col-sm-6" >
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/image1.png" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/lova-calculator.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/image2.png" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/kundli2.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6" >
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/image3.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/shortlist.png" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/image4.png" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/onoff.png" alt="">
                 </a>
             </div>
         </div>
@@ -205,23 +205,23 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
+                <h2 class="page-header">Modern Exciting Features</h2>
             </div>
             <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <p>The Modern Exciting Features includes:</p>
                 <ul>
-                    <li><strong>Bootstrap v3.3.7</strong>
+                    <li><strong>Kundli Matcher</strong>
                     </li>
-                    <li>jQuery v1.11.1</li>
-                    <li>Font Awesome v4.2.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
+                    <li>College based profile matching</li>
+                    <li>Multi Language Support</li>
+                    <li>Shortlisting Profiles</li>
+                    <li>Love percentage calculator</li>
+                    <li>Featured Profiles Listing</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                <p>Apart from these basic features we also have a complete reporting system of what activitites you do on myjivnsaathi so easily shortlist the profile with best features.We have event calender system as well where you can schedule your meetings.</p>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                <img class="img-responsive" src="http://myjivansaathilocal.com/assets/kundli.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->
