@@ -19,7 +19,7 @@
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" onclick="openCalender();">Calender</a>
+                    <a href="/calender.php">Calender</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>

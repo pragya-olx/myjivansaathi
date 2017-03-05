@@ -37,7 +37,7 @@ if(isset($_POST['func']) && !empty($_POST['func'])){
  * Get calendar full HTML
  */
 function getCalender($year = '',$month = '')
-{echo "dddd"; die;
+{
     $dateYear = ($year != '')?$year:date("Y");
     $dateMonth = ($month != '')?$month:date("m");
     $date = $dateYear.'-'.$dateMonth.'-01';
