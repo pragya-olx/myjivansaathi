@@ -51,10 +51,14 @@
       <file leaf-file-name="calender.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17826825">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.050933786">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+                <element signature="e#63#108#0#HTML" expanded="true" />
+                <element signature="e#405#441#0#PHP" expanded="true" />
+                <marker date="1488733138292" expanded="true" signature="3508:3579" placeholder="SELECT title... events" />
+                <marker date="1488733138292" expanded="true" signature="8937:9001" placeholder="SELECT title... events" />
+                <marker date="1488733138292" expanded="true" signature="9573:9693" placeholder="INSERT INTO events... " />
               </folding>
             </state>
           </provider>
@@ -93,8 +97,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="122.958336">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.583333">
+              <caret line="182" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="2" />
               <folding>
                 <element signature="e#6#42#0#PHP" expanded="true" />
                 <marker date="1462548268000" expanded="true" signature="2650:2721" placeholder="SELECT title... events" />
@@ -401,14 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.6666667">
@@ -463,10 +459,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dbConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="122.958336">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.583333">
+          <caret line="182" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="2" />
           <folding>
             <element signature="e#6#42#0#PHP" expanded="true" />
             <marker date="1462548268000" expanded="true" signature="2650:2721" placeholder="SELECT title... events" />
@@ -478,10 +482,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/calender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17826825">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.050933786">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
+            <element signature="e#63#108#0#HTML" expanded="true" />
+            <element signature="e#405#441#0#PHP" expanded="true" />
+            <marker date="1488733138292" expanded="true" signature="3508:3579" placeholder="SELECT title... events" />
+            <marker date="1488733138292" expanded="true" signature="8937:9001" placeholder="SELECT title... events" />
+            <marker date="1488733138292" expanded="true" signature="9573:9693" placeholder="INSERT INTO events... " />
           </folding>
         </state>
       </provider>
