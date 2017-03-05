@@ -235,7 +235,7 @@
                     <p>Now find your suitable match very easily using our multiple features. Let us know if you have face any issues.</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                    <a class="btn btn-lg btn-default btn-block" href="#">Call for any queries</a>
                 </div>
             </div>
         </div>
