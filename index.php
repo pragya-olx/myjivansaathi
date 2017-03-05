@@ -15,7 +15,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start seraching</a>
+                <a class="navbar-brand" href="index.html">Start searching</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -24,7 +24,7 @@
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
+                        <a href="javascript:void(0);" onclick="openCalender();">Calender</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -167,7 +167,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Prepare your own event calender to mark the important dates and time of meeting the people.</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <a href="http://myjivansaathilocal.com/calender.php" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -258,6 +258,11 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+
+        function openCalender()
+        {
+            window.location="http://myjivansaathilocal.com/calender.php";
+        }
     </script>
 
 </body>
