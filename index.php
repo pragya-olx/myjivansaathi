@@ -16,19 +16,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://myjivansaathilocal.com/assets/slider1.jpg');"></div>
+                <div class="fill" style="background-image:url('assets/slider1.jpg');"></div>
 
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://myjivansaathilocal.com/assets/slider2.jpg');"></div>
+                <div class="fill" style="background-image:url('assets/slider2.jpg');"></div>
 
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://myjivansaathilocal.com/assets/slider5.jpg');"></div>
+                <div class="fill" style="background-image:url('assets/slider5.jpg');"></div>
 
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://myjivansaathilocal.com/assets/slider4.jpg');"></div>
+                <div class="fill" style="background-image:url('assets/slider4.jpg');"></div>
 
             </div>
         </div>
@@ -95,22 +95,22 @@
             </div>
             <div class="col-md-4 col-sm-6" >
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/lova-calculator.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="assets/lova-calculator.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/kundli2.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="assets/kundli2.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6" >
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/shortlist.png" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="assets/shortlist.png" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://myjivansaathilocal.com/assets/onoff.png" alt="">
+                    <img class="img-responsive img-portfolio img-hover" src="assets/onoff.png" alt="">
                 </a>
             </div>
         </div>
@@ -135,7 +135,7 @@
                 <p>Apart from these basic features we also have a complete reporting system of what activitites you do on myjivnsaathi so easily shortlist the profile with best features.We have event calender system as well where you can schedule your meetings.</p>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="http://myjivansaathilocal.com/assets/kundli.jpg" alt="">
+                <img class="img-responsive" src="assets/kundli.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->
@@ -175,7 +175,7 @@
 
         function openCalender()
         {
-            window.location="http://myjivansaathilocal.com/calender.php";
+            window.location="/calender.php";
         }
     </script>
 
