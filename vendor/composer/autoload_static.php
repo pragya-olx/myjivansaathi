@@ -7,6 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInit624b62a685a4b100aed08825c5d028ed
 {
     public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'Unirest' => 
+            array (
+                0 => __DIR__ . '/../..' . '/lib',
+            ),
+        ),
         'M' => 
         array (
             'Monolog' => 
