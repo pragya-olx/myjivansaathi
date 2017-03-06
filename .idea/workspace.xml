@@ -51,15 +51,15 @@
       <file leaf-file-name="calender.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.517341">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.1734104">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="e#63#108#0#HTML" expanded="true" />
-                <element signature="e#4707#4743#0#PHP" expanded="true" />
-                <marker date="1488777428861" expanded="true" signature="3016:3087" placeholder="SELECT title... events" />
-                <marker date="1488777428861" expanded="true" signature="7811:7882" placeholder="SELECT title... events" />
-                <marker date="1488777428861" expanded="true" signature="13240:13304" placeholder="SELECT title... events" />
-                <marker date="1488777428861" expanded="true" signature="13876:13996" placeholder="INSERT INTO events... " />
+                <element signature="e#4679#4715#0#PHP" expanded="true" />
+                <marker date="1488777527815" expanded="true" signature="2988:3059" placeholder="SELECT title... events" />
+                <marker date="1488777527815" expanded="true" signature="7783:7854" placeholder="SELECT title... events" />
+                <marker date="1488777527815" expanded="true" signature="13212:13276" placeholder="SELECT title... events" />
+                <marker date="1488777527815" expanded="true" signature="13848:13968" placeholder="INSERT INTO events... " />
               </folding>
             </state>
           </provider>
@@ -483,15 +483,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/calender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.517341">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.1734104">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="e#63#108#0#HTML" expanded="true" />
-            <element signature="e#4707#4743#0#PHP" expanded="true" />
-            <marker date="1488777428861" expanded="true" signature="3016:3087" placeholder="SELECT title... events" />
-            <marker date="1488777428861" expanded="true" signature="7811:7882" placeholder="SELECT title... events" />
-            <marker date="1488777428861" expanded="true" signature="13240:13304" placeholder="SELECT title... events" />
-            <marker date="1488777428861" expanded="true" signature="13876:13996" placeholder="INSERT INTO events... " />
+            <element signature="e#4679#4715#0#PHP" expanded="true" />
+            <marker date="1488777527815" expanded="true" signature="2988:3059" placeholder="SELECT title... events" />
+            <marker date="1488777527815" expanded="true" signature="7783:7854" placeholder="SELECT title... events" />
+            <marker date="1488777527815" expanded="true" signature="13212:13276" placeholder="SELECT title... events" />
+            <marker date="1488777527815" expanded="true" signature="13848:13968" placeholder="INSERT INTO events... " />
           </folding>
         </state>
       </provider>

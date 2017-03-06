@@ -8,19 +8,19 @@ include('menu.php');?>
 <link type="text/css" rel="stylesheet" href="/assets/add-new-event.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-
-<div id="calendar_div">
-
-    <?php  $year = '';$month = '';
-    $dateYear = ($year != '')?$year:date("Y");
-    $dateMonth = ($month != '')?$month:date("m");
-    $date = $dateYear.'-'.$dateMonth.'-01';
-    $currentMonthFirstDay = date("N",strtotime($date));
-    $totalDaysOfMonth = cal_days_in_month(CAL_GREGORIAN,$dateMonth,$dateYear);
-    $totalDaysOfMonthDisplay = ($currentMonthFirstDay == 7)?($totalDaysOfMonth):($totalDaysOfMonth + $currentMonthFirstDay);
-    $boxDisplay = ($totalDaysOfMonthDisplay <= 35)?35:42; ?>
+<?php  $year = '';$month = '';
+$dateYear = ($year != '')?$year:date("Y");
+$dateMonth = ($month != '')?$month:date("m");
+$date = $dateYear.'-'.$dateMonth.'-01';
+$currentMonthFirstDay = date("N",strtotime($date));
+$totalDaysOfMonth = cal_days_in_month(CAL_GREGORIAN,$dateMonth,$dateYear);
+$totalDaysOfMonthDisplay = ($currentMonthFirstDay == 7)?($totalDaysOfMonth):($totalDaysOfMonth + $currentMonthFirstDay);
+$boxDisplay = ($totalDaysOfMonthDisplay <= 35)?35:42; ?>
 
 
+
+
+    <div id="calendar_div">
 
     <div id="calender_section">
         <h2>
