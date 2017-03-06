@@ -1,4 +1,4 @@
-<?php
+<?php echo header1();
 function header1()
 {
 
@@ -10,7 +10,7 @@ function header1()
 <?php
 
 }
-echo header1();
+
 ?>
 
 
