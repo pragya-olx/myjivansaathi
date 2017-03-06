@@ -15,7 +15,7 @@ include('menu.php');?>
 
 <div id="calendar_div">
 
-    <?php echo getCalender(); ?>
+    <?php  getCalender(); ?>
 
 </div>
 
