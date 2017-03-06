@@ -6,10 +6,13 @@ include('menu.php');?>
 <h3 style="margin: 12px 151px;background: beige;"> Build your event calender. Mark the important dates! </h3>
     <link type="text/css" rel="stylesheet" href="assets/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-<div id="calendar_div">
-    <?php  $year='';$month=''; $dateYear = ($year != '')?$year:date("Y");
+<?php
+    /*
+ * Get calendar full HTML
+ */
+function getCalender($year = '',$month = '')
+{
+    $dateYear = ($year != '')?$year:date("Y");
     $dateMonth = ($month != '')?$month:date("m");
     $date = $dateYear.'-'.$dateMonth.'-01';
     $currentMonthFirstDay = date("N",strtotime($date));
@@ -164,70 +167,75 @@ include('menu.php');?>
         });
     </script>
     <?php
+}
 
-    /*
-     * Get months options list.
-     */
-    function getAllMonths($selected = ''){
-        $options = '';
-        for($i=1;$i<=12;$i++)
-        {
-            $value = ($i < 01)?'0'.$i:$i;
-            $selectedOpt = ($value == $selected)?'selected':'';
-            $options .= '<option value="'.$value.'" '.$selectedOpt.' >'.date("F", mktime(0, 0, 0, $i+1, 0, 0)).'</option>';
-        }
-        return $options;
+/*
+ * Get months options list.
+ */
+function getAllMonths($selected = ''){
+    $options = '';
+    for($i=1;$i<=12;$i++)
+    {
+        $value = ($i < 01)?'0'.$i:$i;
+        $selectedOpt = ($value == $selected)?'selected':'';
+        $options .= '<option value="'.$value.'" '.$selectedOpt.' >'.date("F", mktime(0, 0, 0, $i+1, 0, 0)).'</option>';
     }
+    return $options;
+}
 
-    /*
-     * Get years options list.
-     */
-    function getYearList($selected = ''){
-        $options = '';
-        for($i=2015;$i<=2025;$i++)
-        {
-            $selectedOpt = ($i == $selected)?'selected':'';
-            $options .= '<option value="'.$i.'" '.$selectedOpt.' >'.$i.'</option>';
-        }
-        return $options;
+/*
+ * Get years options list.
+ */
+function getYearList($selected = ''){
+    $options = '';
+    for($i=2015;$i<=2025;$i++)
+    {
+        $selectedOpt = ($i == $selected)?'selected':'';
+        $options .= '<option value="'.$i.'" '.$selectedOpt.' >'.$i.'</option>';
     }
+    return $options;
+}
 
-    /*
-     * Get events by date
-     */
-    function getEvents($date = ''){
-        //Include db configuration file
-        include 'dbConfig.php';
-        $eventListHTML = '';
-        $date = $date?$date:date("Y-m-d");
-        //Get events based on the current date
-        $result = $db->query("SELECT title FROM events WHERE date = '".$date."' AND status = 1");
-        if($result->num_rows > 0){
-            $eventListHTML = '<h2>Events on '.date("l, d M Y",strtotime($date)).'</h2>';
-            $eventListHTML .= '<ul>';
-            while($row = $result->fetch_assoc()){
-                $eventListHTML .= '<li>'.$row['title'].'</li>';
-            }
-            $eventListHTML .= '</ul>';
+/*
+ * Get events by date
+ */
+function getEvents($date = ''){
+    //Include db configuration file
+    include 'dbConfig.php';
+    $eventListHTML = '';
+    $date = $date?$date:date("Y-m-d");
+    //Get events based on the current date
+    $result = $db->query("SELECT title FROM events WHERE date = '".$date."' AND status = 1");
+    if($result->num_rows > 0){
+        $eventListHTML = '<h2>Events on '.date("l, d M Y",strtotime($date)).'</h2>';
+        $eventListHTML .= '<ul>';
+        while($row = $result->fetch_assoc()){
+            $eventListHTML .= '<li>'.$row['title'].'</li>';
         }
-        echo $eventListHTML;
+        $eventListHTML .= '</ul>';
     }
+    echo $eventListHTML;
+}
 
-    /*
-     * Add event to date
-     */
-    function addEvent($date,$title){
-        //Include db configuration file
-        include 'dbConfig.php';
-        $currentDate = date("Y-m-d H:i:s");
-        //Insert the event data into database
-        $insert = $db->query("INSERT INTO events (title,date,created,modified) VALUES ('".$title."','".$date."','".$currentDate."','".$currentDate."')");
-        if($insert){
-            echo 'ok';
-        }else{
-            echo 'err';
-        }
-    }?>
+/*
+ * Add event to date
+ */
+function addEvent($date,$title){
+    //Include db configuration file
+    include 'dbConfig.php';
+    $currentDate = date("Y-m-d H:i:s");
+    //Insert the event data into database
+    $insert = $db->query("INSERT INTO events (title,date,created,modified) VALUES ('".$title."','".$date."','".$currentDate."','".$currentDate."')");
+    if($insert){
+        echo 'ok';
+    }else{
+        echo 'err';
+    }
+}
+?>
+
+<div id="calendar_div">
+    <?php echo getCalender(); ?>
 </div>
 
 <?php
@@ -250,6 +258,4 @@ if(isset($_POST['func']) && !empty($_POST['func'])){
             break;
     }
 }
-
-
 ?>
