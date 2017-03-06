@@ -46,6 +46,7 @@ function getCalender($year = '',$month = '')
     $totalDaysOfMonth = cal_days_in_month(CAL_GREGORIAN,$dateMonth,$dateYear);
     $totalDaysOfMonthDisplay = ($currentMonthFirstDay == 7)?($totalDaysOfMonth):($totalDaysOfMonth + $currentMonthFirstDay);
     $boxDisplay = ($totalDaysOfMonthDisplay <= 35)?35:42;
+    die('1111');
     ?>
     <div id="calender_section">
         <h2>

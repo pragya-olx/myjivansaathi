@@ -51,14 +51,14 @@
       <file leaf-file-name="calender.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17826825">
-              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.3820034">
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
               <folding>
                 <element signature="e#63#108#0#HTML" expanded="true" />
                 <element signature="e#478#514#0#PHP" expanded="true" />
-                <marker date="1488734320830" expanded="true" signature="3581:3652" placeholder="SELECT title... events" />
-                <marker date="1488734320830" expanded="true" signature="9010:9074" placeholder="SELECT title... events" />
-                <marker date="1488734320830" expanded="true" signature="9646:9766" placeholder="INSERT INTO events... " />
+                <marker date="1488777035009" expanded="true" signature="3598:3669" placeholder="SELECT title... events" />
+                <marker date="1488777035009" expanded="true" signature="9027:9091" placeholder="SELECT title... events" />
+                <marker date="1488777035009" expanded="true" signature="9663:9783" placeholder="INSERT INTO events... " />
               </folding>
             </state>
           </provider>
@@ -77,8 +77,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.416667">
-              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+            <state vertical-scroll-proportion="-9.541667">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -309,7 +309,7 @@
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28285933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28285933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -442,14 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.416667">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -480,16 +472,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.541667">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/calender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17826825">
-          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.3820034">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
           <folding>
             <element signature="e#63#108#0#HTML" expanded="true" />
             <element signature="e#478#514#0#PHP" expanded="true" />
-            <marker date="1488734320830" expanded="true" signature="3581:3652" placeholder="SELECT title... events" />
-            <marker date="1488734320830" expanded="true" signature="9010:9074" placeholder="SELECT title... events" />
-            <marker date="1488734320830" expanded="true" signature="9646:9766" placeholder="INSERT INTO events... " />
+            <marker date="1488777035009" expanded="true" signature="3598:3669" placeholder="SELECT title... events" />
+            <marker date="1488777035009" expanded="true" signature="9027:9091" placeholder="SELECT title... events" />
+            <marker date="1488777035009" expanded="true" signature="9663:9783" placeholder="INSERT INTO events... " />
           </folding>
         </state>
       </provider>
