@@ -2,7 +2,7 @@
     include_once('menu.php')?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<body>
+<body background="assets/lova-calculator.jpg">
 
 <div class="container-fluid">
     <div class="row">
@@ -32,10 +32,10 @@
 <script type="text/javascript">
    function submitData(){
        var data = {
-           firstname1 : $("#firstname1").val(),
-           lastname1 : $("#lastname1").val(),
-           firstname2 : $("#firstname2").val(),
-           lastname2 : $("#lastname2").val()
+           firstname1 : $("#firstname1").val().trim(),
+           lastname1 : $("#lastname1").val().trim(),
+           firstname2 : $("#firstname2").val().trim(),
+           lastname2 : $("#lastname2").val().trim()
        };
 
        $.ajax({
@@ -44,6 +44,8 @@
            success: function(result) {
                alert("woah ! Your Love percentage is ready"); //this alert is fired
                result = (sumchars(data.firstname1)+ sumchars(data.lastname1) +  sumchars(data.firstname2)-sumchars(data.lastname2)*100)/100
+               if(result < 0)
+                result = 0
                $('div#result').text(result + '%' );
            }
        });
