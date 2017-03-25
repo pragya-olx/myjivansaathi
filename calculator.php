@@ -2,7 +2,7 @@
     include_once('menu.php')?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<body background="assets/lova-calculator.jpg">
+<body background="assets/heart.jpg">
 
 <div class="container-fluid">
     <div class="row">
