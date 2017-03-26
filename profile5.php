@@ -28,9 +28,10 @@
                     $connection = mysql_connect("localhost", "root", "root");
                     $db = mysql_select_db("myjivansaathi", $connection); // Storing values in database.
                     $query = mysql_query("insert into user_profile (name,email,mobile_no,password,date_of_birth) values('$name','$email','$phone','$password','$bday')", $connection);
-                    $query = mysql_query("insert into profile2 (MotherTongue,Religion,MaritalStatus,Height,Country, State, City) values('$mothertongue','$religion','$maritalstatus','$height','$country','$state','$city')", $connection);
-                    $query = mysql_query("insert into profile3(highestdegree,occupation,income,express) values('$highestdegree','$occupation','$income','$express')", $connection);
-                     $query = mysql_query("insert into profile4 (familyType,Foccupation,Moccupation,Boccupation,Soccupation, familyLiving, contact, about) values('$familyType','$Foccupation','$Moccupation','$Boccupation','$Soccupation','$familyLiving','$contact','$about')", $connection);
+                    $user_id = mysql_insert_id();
+                    $query =mysql_query("insert into profile2 (MotherTongue,Religion,MaritalStatus,Height,Country, State, City,user_id) values('$mothertongue','$religion','$maritalstatus','$height','$country','$state','$city' ,$user_id)", $connection);
+                    $query = mysql_query("insert into profile3(highestdegree,occupation,income,express,user_id) values('$highestdegree','$occupation','$income','$express', $user_id)", $connection);
+                     $query = mysql_query("insert into profile4 (familyType,Foccupation,Moccupation,Boccupation,Soccupation, familyLiving, contact, about,user_id) values('$familyType','$Foccupation','$Moccupation','$Boccupation','$Soccupation','$familyLiving','$contact','$about', $user_id)", $connection);
 
                     if ($query) {
                         echo '<p><span id="success">Form Submitted successfully..!!</span></p>';
