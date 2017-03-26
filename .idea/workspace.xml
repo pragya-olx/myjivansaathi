@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70190174-7947-4db5-aaaf-d1c0631c8953" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.composer..swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spreadsheet.php" afterPath="$PROJECT_DIR$/spreadsheet.php" />
     </list>
     <ignored path="myJivansaathi.iws" />
     <ignored path=".idea/workspace.xml" />
