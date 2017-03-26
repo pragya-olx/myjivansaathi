@@ -27,7 +27,17 @@ if (isset($_POST['highestdegree'])){
 }
 
 ?>
-<p>
+<div>
+    <div style="margin: 30px;">
+        <ul style="list-style: none;">
+            <li style="display: inline;margin:50px 0px;  padding: 15px;background-color: lightyellow;">Step1</li>
+            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow">Step2</li>
+            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow">Step3</li>
+            <li style="display: inline;margin:50px 0px; padding: 15px;background-color: lightgreen ;box-shadow: 2px 2px 2px lightgreen"">Step4</li>
+            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow;"">Step5</li>
+        </ul>
+    </div>
+</div><p>
 <span class="error">
 <?php
     // To show error of page 2.
@@ -39,22 +49,39 @@ if (isset($_POST['highestdegree'])){
 </p>
 <div class="boxclass">
 <form method="post" action="profile5.php" style="margin-left: 20px;">
+    <div style="margin: 10px;">
     <label>Family Type:<span>*</span> </label><input type="text" name="familyType" >
     <br>
-    <label>Fathers Occupation:<span>*</span></label> <input type="text" name="Foccupation">
+        </div>
+        <div style="margin: 10px;">
+        <label>Fathers Occupation:<span>*</span></label> <input type="text" name="Foccupation">
     <br>
+        </div>
+    <div style="margin: 10px;">
         <label>Mothers Occupation :<span>*</span></label><input type="text" name="Moccupation" >
     <br>
+    </div>
+    <div style="margin: 10px;">
         <label>Brothers Occupation :<span>*</span></label><input type="text" name="Boccupation" >
     <br>
+    </div>
+    <div style="margin: 10px;">
         <label>Sisters Occupation :<span>*</span></label><input type="text" name="Soccupation" >
     <br>
+    </div>
+    <div style="margin: 10px;">
          <label>Family Living in :<span>*</span></label><input type="text" name="familyLiving" >
     <br>
+    </div>
+    <div style="margin: 10px;">
           <label>Contact Address :<span>*</span></label><input type="text" name="contact" >
     <br>
+    </div>
+    <div style="margin: 10px;">
          <label>About:<span>*</span></label> <textarea name="about" rows="5" cols="40"></textarea>
     <br><br>
+
     <input type="submit" name="submit" value="Submit">
+        </div>
 </form>
 </div>

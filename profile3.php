@@ -30,7 +30,17 @@ if (isset($_POST['mothertongue'])){
 }
 
 ?>
-
+<div>
+<div style="margin: 30px;">
+    <ul style="list-style: none;">
+        <li style="display: inline;margin:50px 0px;  padding: 15px;background-color: lightyellow;">Step1</li>
+        <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow">Step2</li>
+        <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightgreen;box-shadow:2px 2px 2px lightgreen"">Step3</li>
+        <li style="display: inline;margin:50px 0px; padding: 15px;background-color: lightyellow;"">Step4</li>
+        <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow;"">Step5</li>
+    </ul>
+</div>
+</div>
 <p><span class="error" style="margin-left: 50px;">
     <?php
     // To show error of page 2.
@@ -42,15 +52,24 @@ if (isset($_POST['mothertongue'])){
 <div class="boxclass">
 
 <form method="post" action="profile4.php" style="margin-left: 20px;">
+    <div style="margin: 10px;">
     <label>Highest degree:</label> <input type="text" name="highestdegree">
     <br>
+    </div>
+    <div style="margin: 10px;">
     <label>Occupation:</label><input type="text" name="occupation" >
     <br>
+    </div>
+    <div style="margin: 10px;">
     <label>Annual Income:</label> <input type="text" name="income" >
     <br>
+    </div>
+    <div style="margin: 10px;">
     <label>Express about yourself:</label> <textarea name="express" rows="5" cols="40"></textarea>
     <br>
+
     <input type="submit" name="submit" value="Submit">
+        </div>
 </form>
     </div>
 

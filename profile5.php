@@ -1,13 +1,20 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>PHP Multi Page Form</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<?php include('header.php');
+include('menu.php');
+?>
 <div class="container">
     <div class="main">
-        <h2>Form completion</h2>
+
+
+        <div style="margin: 30px;">
+            <ul style="list-style: none;">
+                <li style="display: inline;margin:50px 0px;  padding: 15px;background-color: lightyellow;">Step1</li>
+                <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow">Step2</li>
+                <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow">Step3</li>
+                <li style="display: inline;margin:50px 0px; padding: 15px;background-color: lightyellow">Step4</li>
+                <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightgreen ;box-shadow: 2px 2px 2px lightgreen"">Step5</li>
+            </ul>
+        </div>
+    </div>
         <?php
         session_start();
         if (isset($_POST['familyType'])) {
@@ -34,9 +41,9 @@
                      $query = mysql_query("insert into profile4 (familyType,Foccupation,Moccupation,Boccupation,Soccupation, familyLiving, contact, about,user_id) values('$familyType','$Foccupation','$Moccupation','$Boccupation','$Soccupation','$familyLiving','$contact','$about', $user_id)", $connection);
 
                     if ($query) {
-                        echo '<p><span id="success">Form Submitted successfully..!!</span></p>';
+                        echo '<div style="margin:100px;"><h3>Congrtaulations <br>Form Submitted successfully..!! Browse more <a href="listings.php">profiles</a></h3></div>';
                     } else {
-                        echo '<p><span>Form Submission Failed..!!</span></p>';
+                        echo '<p><span>Form Submission Failed..!!</span>Browse more  <a href=" listings.php">profiles</a></p>';
                     }
                     unset($_SESSION['post']); // Destroying session.
                 }
@@ -49,5 +56,3 @@
         ?>
     </div>
 </div>
-</body>
-</html>
