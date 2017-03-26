@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70190174-7947-4db5-aaaf-d1c0631c8953" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.composer..swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/listings.php" afterPath="$PROJECT_DIR$/listings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spreadsheet.php" afterPath="$PROJECT_DIR$/spreadsheet.php" />
     </list>
     <ignored path="myJivansaathi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listings.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listings.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3323263">
+            <state vertical-scroll-proportion="-5.875">
               <caret line="12" column="89" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -73,6 +69,16 @@
                 <marker date="1490546628004" expanded="true" signature="224:251" placeholder="select * fro... into" />
                 <marker date="1490546628004" expanded="true" signature="237:251" placeholder="insert into user_profile... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spreadsheet.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spreadsheet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20718232">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,29 +144,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile5.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile5.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1490544608842" expanded="true" signature="1894:2018" placeholder="insert into user_profile... " />
-                <marker date="1490544608842" expanded="true" signature="2126:2321" placeholder="insert into profile2... " />
-                <marker date="1490544608842" expanded="true" signature="2380:2519" placeholder="insert into profile3... " />
-                <marker date="1490544608842" expanded="true" signature="2579:2826" placeholder="insert into profile4... " />
-                <marker date="1490544608842" expanded="true" signature="2920:2933" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="profile3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile3.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -218,7 +201,6 @@
       <list>
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/dhtmlxSpreadsheet_v21/codebase/php/config.php" />
-        <option value="$PROJECT_DIR$/spreadsheet.php" />
         <option value="$PROJECT_DIR$/event.php" />
         <option value="$PROJECT_DIR$/detail.php" />
         <option value="$PROJECT_DIR$/profile4.php" />
@@ -230,6 +212,7 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/listings.php" />
+        <option value="$PROJECT_DIR$/spreadsheet.php" />
       </list>
     </option>
   </component>
@@ -585,16 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spreadsheet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dhtmlxSpreadsheet_v21/codebase/php/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
@@ -784,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/listings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3323263">
+        <state vertical-scroll-proportion="-5.875">
           <caret line="12" column="89" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -792,6 +765,14 @@
             <marker date="1490546628004" expanded="true" signature="224:251" placeholder="select * fro... into" />
             <marker date="1490546628004" expanded="true" signature="237:251" placeholder="insert into user_profile... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spreadsheet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20718232">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
