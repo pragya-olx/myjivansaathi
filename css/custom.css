@@ -4,3 +4,11 @@
 .leftBox{border:1px solid red; padding: 5px; margin : 5px;float: left; background-color: lightgray; height:100px; width:90px;}
 .rightBox{border: 1px solid blue; padding: 5px; float:right; margin: 5px;background-color: lightgray; height:100px;width: 700px;}
 .mySlides{height:259px;width:200px;}
+.navbar-inverse {
+    background-color: lightgreen;
+    border-color: green;
+    }
+.navbar-brand {
+    color:darkgreen !important;
+}
+
