@@ -30,6 +30,19 @@
                 <li>
                     <a href="spreadsheet.php">Report</a>
                 </li>
+                <li>
+                <li class="dropdown">
+                    <a href="/login.php" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/profile.php">Profile</a>
+                        </li>
+                        <li>
+                            <a href="/logout.php"">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

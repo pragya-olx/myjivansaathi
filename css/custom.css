@@ -1,14 +1,175 @@
-.boxclass{padding: 10px; border: solid yellow 0px; background-color: lightyellow; margin:50px; width: 50%; hegiht:60%; box-shadow: 10px 10px 5px lightgreen;}
+.boxclass{padding: 10px; border: solid lightyellow 0px; background-color: lightyellow; margin:50px; width: 50%; hegiht:60%; box-shadow: 10px 10px 5px red;}
 .spanclass{padding: 10px; background-color: lightgrey; margin-left: 100px;}
 .errorAlign{margin:10px;}
 .leftBox{border:1px solid red; padding: 5px; margin : 5px;float: left; background-color: lightgray; height:100px; width:90px;}
 .rightBox{border: 1px solid blue; padding: 5px; float:right; margin: 5px;background-color: lightgray; height:100px;width: 700px;}
 .mySlides{height:259px;width:200px;}
 .navbar-inverse {
-    background-color: lightgreen;
-    border-color: green;
-    }
-.navbar-brand {
-    color:darkgreen !important;
+    background-color: darkred;
+    border-color: palevioletred;
+}
+#calender_section h2 {
+    background-color: palevioletred !important;
+}
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    font: 18px Helvetica, Arial, Sans-Serif;
+    margin: 40px;
+    padding: 0;
+}
+.breadcrumb li {
+    float: left;
+}
+.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0 10px 55px;
+    background: red; /* fallback color */
+    background:hsl(0, 70%, 50%);
+    position: relative;
+    display: block;
+    float: left;
+}
+.breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid hsl(0, 70%, 50%);
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+.breadcrumb li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+.breadcrumb li:first-child a {
+    padding-left: 10px;
+}
+.breadcrumb li:nth-child(2) a       { background:        hsl(0, 100%, 50%) }
+.breadcrumb li:nth-child(2) a:after { border-left-color: hsl(0, 100%, 50%) }
+.breadcrumb li:nth-child(3) a       { background:        hsl(0, 90%, 50%) }
+.breadcrumb li:nth-child(3) a:after { border-left-color: hsl(0, 90%, 50%)}
+.breadcrumb li:nth-child(4) a       { background:        hsl(0, 80%, 50%) }
+.breadcrumb li:nth-child(4) a:after { border-left-color: hsl(0, 80%, 50%) }
+.breadcrumb li:nth-child(5) a       { background:        hsl(0, 70%, 50%) }
+.breadcrumb li:nth-child(5) a:after { border-left-color: hsl(0, 70%, 50%) }
+.breadcrumb li:nth-child(6) a       { background:        hsl(0, 60%, 50%) }
+.breadcrumb li:nth-child(6) a:after { border-left-color: hsl(0, 60%, 50%) }
+.breadcrumb li:last-child a {
+    background:hsl(0, 70%, 50%);
+    color: black;
+    pointer-events: none;
+    cursor: default;
+}
+.breadcrumb li:last-child a:after { border: 0; }
+.breadcrumb li a:hover { background: hsl(0, 70%, 50%) }
+.breadcrumb li a:hover:after { border-left-color: hsl(0, 70%, 50%) !important; }
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+    font-size: 20px; !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    font-size: 17px;!important;
 }
 
+input[type=submit],
+input[type=reset]{
+    padding: 10px;
+    background: linear-gradient(red 5%, indianred 100%);
+    border: 1px solid #e5a900;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    font-weight:bold;
+    font-size:16px;
+}
+input[type=submit]:hover,
+input[type=reset]:hover
+{
+    background: linear-gradient(red 5%, indianred 100%);
+}
+#error{
+    display:block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.error {color: darkred;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+#success{
+    color:green;
+    font-weight:bold;
+}
+span{
+    color:red;
+}
+h2{
+    background-color: #FEFFED;
+    padding: 32px;
+    margin: 0 -50px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+b{
+    font-size:18px;
+    display: block;
+    color: #555;
+}
+hr{
+    margin: 0 -50px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom:25px;
+}
+label{
+    color: #464646;
+    font-size: 14px;
+    font-weight: bold;
+}
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email]{
+    width:96%;
+    height:25px;
+    padding:5px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+input[type=radio]
+{
+    margin:20px;
+}
+select{
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    font-family: cursive;
+}

@@ -1,6 +1,8 @@
 <?php include('header.php');
 include('menu.php');
 ?>
+<div style="background-color: lightgoldenrodyellow;">
+
 <style xmlns="http://www.w3.org/1999/html">
     .error {color: #FF0000;}
 </style>
@@ -29,18 +31,20 @@ if (isset($_POST['highestdegree'])){
 ?>
 <div>
     <div style="margin: 30px;">
-        <ul style="list-style: none;">
-            <li style="display: inline;margin:50px 0px;  padding: 15px;background-color: lightyellow;">Step1</li>
-            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow">Step2</li>
-            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow">Step3</li>
-            <li style="display: inline;margin:50px 0px; padding: 15px;background-color: lightgreen ;box-shadow: 2px 2px 2px lightgreen"">Step4</li>
-            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow;"">Step5</li>
+        <ul class="breadcrumb">
+            <li><a href="profile.php">Profile</a></li>
+            <li ><a href="profile2.php">General Info</a></li>
+            <li><a href="profile3.php">Occupation</a></li>
+            <li id="id_4" style="display: inline;" ><a id="id_4" onclick="changeBackgroundcolor('red','id_4');">Family Info</a></li>
+            <li><a href="profile5.php">Completion</a></li>
+            <li style="display: none"><a href="#">Completion</a></li>
         </ul>
     </div>
 </div><p>
 <span class="error">
 <?php
-    // To show error of page 2.
+    extract($_SESSION['post']);
+// To show error of page 2.
     if (!empty($_SESSION['error_page4'])) {
         echo $_SESSION['error_page4'];
         unset($_SESSION['error_page4']);
@@ -50,38 +54,51 @@ if (isset($_POST['highestdegree'])){
 <div class="boxclass">
 <form method="post" action="profile5.php" style="margin-left: 20px;">
     <div style="margin: 10px;">
-    <label>Family Type:<span>*</span> </label><input type="text" name="familyType" >
+    <label>Family Type:<span>*</span> </label><input type="text" name="familyType" value="<?=$familyType;?>">
     <br>
         </div>
         <div style="margin: 10px;">
-        <label>Fathers Occupation:<span>*</span></label> <input type="text" name="Foccupation">
+        <label>Fathers Occupation:<span>*</span></label> <input type="text" name="Foccupation" value="<?=$Foccupation;?>">
     <br>
         </div>
     <div style="margin: 10px;">
-        <label>Mothers Occupation :<span>*</span></label><input type="text" name="Moccupation" >
+        <label>Mothers Occupation :<span>*</span></label><input type="text" name="Moccupation" value="<?=$Moccupation;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-        <label>Brothers Occupation :<span>*</span></label><input type="text" name="Boccupation" >
+        <label>Brothers Occupation :<span>*</span></label><input type="text" name="Boccupation" value="<?=$Boccupation;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-        <label>Sisters Occupation :<span>*</span></label><input type="text" name="Soccupation" >
+        <label>Sisters Occupation :<span>*</span></label><input type="text" name="Soccupation" value="<?=$Soccupation;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-         <label>Family Living in :<span>*</span></label><input type="text" name="familyLiving" >
+         <label>Family Living in :<span>*</span></label><input type="text" name="familyLiving" value="<?=$familyLiving;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-          <label>Contact Address :<span>*</span></label><input type="text" name="contact" >
+          <label>Contact Address :<span>*</span></label><input type="text" name="contact" value="<?=$contact;?>" >
     <br>
     </div>
     <div style="margin: 10px;">
-         <label>About:<span>*</span></label> <textarea name="about" rows="5" cols="40"></textarea>
+         <label>About:<span>*</span></label> <textarea name="about" rows="5" cols="40"><?=$about;?></textarea>
     <br><br>
-
     <input type="submit" name="submit" value="Submit">
         </div>
 </form>
 </div>
+</div>
+
+<script>
+    changeBackgroundcolor('green','id_4');
+    function changeBackgroundcolor(color,id)
+    {
+        document.getElementById(id).background = color;
+        document.getElementById(id).style='border-left: 30px solid pink;background: pink;';
+        console.log(   document.getElementsByClassName('.breadcrumb li a:after').style );
+        //   document.getElementsByClassName('.breadcrumb li a:after').style = 'border-left: 30px solid green !important';
+
+    }
+</script>
+<?php include('footer.php'); ?>

@@ -1,6 +1,7 @@
 <?php include('header.php');
 include('menu.php');
 ?>
+<div style="background-color: lightgoldenrodyellow;">
 <style>
     .error {color: #FF0000;}
 </style>
@@ -8,6 +9,14 @@ include('menu.php');
 <?php
 
 session_start();
+
+if(($_SESSION && isset($_SESSION['post']['mothertongue']))) {
+    extract($_SESSION['post']);
+}
+else{
+    $mothertongue=$religion=$maritalstatus=$height=$country=$state=$city= '';
+}
+
 // Checking first page values for empty,If it finds any blank field then redirected to first page.
 if (isset($_POST['name'])){
     if (empty($_POST['name'])
@@ -46,17 +55,17 @@ if (isset($_POST['name'])){
 
 
 <div>
-    <div style="margin: 30px;">
-        <ul style="list-style: none;">
-            <li style="display: inline;margin:50px 0px;  padding: 15px;background-color: lightyellow;">Step1</li>
-            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightgreen;box-shadow: 2px 2px 2px lightgreen"">Step2</li>
-            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow;"">Step3</li>
-            <li style="display: inline;margin:50px 0px; padding: 15px;background-color: lightyellow;"">Step4</li>
-            <li style="display: inline;margin:50px 0px;padding: 15px;background-color: lightyellow;"">Step5</li>
+    <div >
+        <ul class="breadcrumb">
+            <li><a href="#">Profile</a></li>
+            <li style="display: inline;background-color: lightgreen;box-shadow: 2px 2px 2px lightgreen"><a href="#" id="id_2">General Info</a></li>
+            <li><a href="#">Occupation</a></li>
+            <li ><a href="#">Family Info</a></li>
+            <li><a href="#">Completion</a></li>
+            <li style="display: none"><a href="#">Completion</a></li>
         </ul>
     </div>
 </div>
-
 
 <p style="margin-top:20px;">
 <span class="error" style="margin-left: 50px;">
@@ -69,34 +78,48 @@ if(isset($_SESSION['error_page2'])) {
 <div class="boxclass">
 <form method="post" action="profile3.php" style="margin-left: 20px;">
     <div style="margin: 10px;">
-    <label>Mothertongue<span>*</span></label>: <input type="text" name="mothertongue">
+    <label>Mothertongue<span>*</span></label>: <input type="text" name="mothertongue" value="<?=$mothertongue;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-    <label>Religion<span>*</span></label>: <input type="text" name="religion" >
+    <label>Religion<span>*</span></label>: <input type="text" name="religion" value="<?=$religion;?>" >
     <br>
     </div>
     <div style="margin: 10px;">
-    <label>Marital Status<span>*</span></label>: <input type="text" name="maritalstatus" >
+    <label>Marital Status<span>*</span></label>: <input type="text" name="maritalstatus" value="<?=$maritalstatus;?>" >
     <br>
     </div>
     <div style="margin: 10px;">
-    <label>Height<span>*</span></label>: <input type="text" name="height" >
+    <label>Height<span>*</span></label>: <input type="text" name="height" value="<?=$height;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-    <label>Country<span>*</span></label>: <input type="text" name="country" >
+    <label>Country<span>*</span></label>: <input type="text" name="country"  value="<?=$country;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-    <label>State<span>*</span></label>: <input type="text" name="state" >
+    <label>State<span>*</span></label>: <input type="text" name="state"  value="<?=$state;?>">
     <br>
     </div>
     <div style="margin: 10px;">
-    <label>City<span>*</span></label>: <input type="text" name="city">
+    <label>City<span>*</span></label>: <input type="text" name="city"  value="<?=$city;?>">
     <br><br>
     <input type="submit" name="submit" value="Submit">
         </div>
 </form>
     </div>
 
+</div>
+
+<script>
+    changeBackgroundcolor('green','id_2');
+    function changeBackgroundcolor(color,id)
+    {
+        document.getElementById(id).background = color;
+        document.getElementById(id).style='border-left: 30px solid pink;background: pink;';
+        console.log(   document.getElementsByClassName('.breadcrumb li a:after').style );
+        //   document.getElementsByClassName('.breadcrumb li a:after').style = 'border-left: 30px solid green !important';
+
+    }
+</script>
+<?php include('footer.php'); ?>

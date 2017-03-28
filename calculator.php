@@ -7,18 +7,18 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6" style="background-color:lavender;">
-            FirstName 1 :<input type="text" id="firstname1">
+            Your FirstName :<input type="text" id="firstname1" value="<?php $_SESSION['name'];  ?>">
         </div>
         <div class="col-sm-6" style="background-color:lavenderblush;">
-            LastName 1 :<input type="text" id="lastname1">
+            Your LastName :<input type="text" id="lastname1">
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6" style="background-color:lavender;">
-            FirstName 2 :<input type="text" id="firstname2">
+            Partners FirstName<input type="text" id="firstname2">
         </div>
         <div class="col-sm-6" style="background-color:lavenderblush;">
-            LastName 2 : <input type="text" id="lastname2">
+            Partners LastName : <input type="text" id="lastname2">
         </div>
     </div>
 

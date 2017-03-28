@@ -13,12 +13,12 @@ function getCalender($year = '',$month = '')
     $boxDisplay = ($totalDaysOfMonthDisplay <= 35)?35:42;
     ?>
     <div id="calender_section">
-        <h2>
+        <h4 style="margin-left: 200px;">
             <a href="javascript:void(0);" onclick="getCalendar('calendar_div','<?php echo date("Y",strtotime($date.' - 1 Month')); ?>','<?php echo date("m",strtotime($date.' - 1 Month')); ?>');">&lt;&lt;</a>
             <select name="month_dropdown" class="month_dropdown dropdown"><?php echo getAllMonths($dateMonth); ?></select>
             <select name="year_dropdown" class="year_dropdown dropdown"><?php echo getYearList($dateYear); ?></select>
             <a href="javascript:void(0);" onclick="getCalendar('calendar_div','<?php echo date("Y",strtotime($date.' + 1 Month')); ?>','<?php echo date("m",strtotime($date.' + 1 Month')); ?>');">&gt;&gt;</a>
-        </h2>
+        </h4>
         <div id="event_list" class="none"></div>
         <!--For Add Event-->
         <div id="event_add" class="none">
@@ -199,7 +199,7 @@ function getEvents($date = ''){
     //Get events based on the current date
     $result = $db->query("SELECT title FROM events WHERE date = '".$date."' AND status = 1");
     if($result->num_rows > 0){
-        $eventListHTML = '<h2>Events on '.date("l, d M Y",strtotime($date)).'</h2>';
+        $eventListHTML = '<h5>Events on '.date("l, d M Y",strtotime($date)).'</h5>';
         $eventListHTML .= '<ul>';
         while($row = $result->fetch_assoc()){
             $eventListHTML .= '<li>'.$row['title'].'</li>';
